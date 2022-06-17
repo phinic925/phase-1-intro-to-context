@@ -20,7 +20,7 @@ function createTimeInEvent(recordArr, dateHour){
 
     const timeInObject = {
         type: 'TimeIn',
-       hour: hour,
+       hour: parseInt(hour),
         date: date,
     }
     recordArr.timeInEvents.push(timeInObject)
@@ -32,7 +32,7 @@ function createTimeInEvent(recordArr, dateHour){
 function createTimeOutEvent(recordArr,dateHour){
     const timeOutObject = {
         type: 'TimeOut',
-        hour: hour,
+        hour: parseInt(hour),
         date: date,
     }
     recordArr.timeOutEvents.push(timeOutObject)
